@@ -125,6 +125,19 @@ body {
   font-style: normal;
   padding-top: 24px;
   padding-bottom: 24px;
+  position: relative;
+}
+
+.active::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0px;
+  border-radius: 2px;
+  bottom: 0;
+  background: var(--accent-txt-cl);
 }
 
 .unit-info {
@@ -302,8 +315,9 @@ body {
 }
 
 .header-page {
-  position: fixed;
+  position: sticky;
   top: 0;
+  line-height: calc(16 / 14);
   width: 100%;
   background-color: var(--main-bg-cl);
   border-bottom: 1px solid var(--secondary-fon-color);
@@ -325,6 +339,10 @@ body {
 .header-nav-menu {
   display: flex;
 }
+
+/* .header-nav-item {
+  position: relative;
+} */
 
 .header-nav-menu .item:not(:last-child) {
   margin-right: 40px;
