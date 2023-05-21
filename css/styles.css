@@ -675,7 +675,7 @@ body {
 .modal {
   position: absolute;
   width: 408px;
-  min-height: 576px;
+  min-height: 584px;
   background-color: var(--modal-bg-cl);
   border-radius: 4px;
   top: calc(50%);
