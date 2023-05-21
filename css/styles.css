@@ -128,6 +128,7 @@ body {
   color: var(--secondary-bg-cl);
 }
 
+/* Main content */
 .hero {
   max-width: 1440px;
   margin: auto;
@@ -187,6 +188,7 @@ body {
 .unit-info {
   text-decoration: none;
   color: inherit;
+  font-style: normal;
 }
 
 .unit-info-item {
@@ -615,16 +617,6 @@ body {
   color: var(--accent-txt-cl);
 }
 
-.footer-socials-link {
-  background-color: var(--logo-part-cl);
-  transition: background-color var(--anim-fast);
-}
-
-.footer-socials-link:hover,
-.footer-socials-link:focus {
-  background-color: var(--secondary-icon-color);
-}
-
 .customers-subtitle {
   line-height: 1.1;
   margin-bottom: 72px;
@@ -636,6 +628,15 @@ body {
   color: var(--subtitle-cl);
 }
 
+.footer-socials-link {
+  background-color: var(--logo-part-cl);
+  transition: background-color var(--anim-fast);
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: var(--secondary-icon-color);
+}
 .footer-social-list {
   display: flex;
   gap: 16px;
