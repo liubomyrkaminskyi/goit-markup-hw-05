@@ -735,7 +735,7 @@ body {
   transition: fill var(--anim-fast);
 }
 
-.modal-close-icon:focus,
-.modal-close-icon:hover {
+.modal-close-btn:focus .modal-close-icon,
+.modal-close-btn:hover .modal-close-icon {
   fill: var(--main-bg-cl);
 }
