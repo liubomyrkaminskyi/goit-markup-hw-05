@@ -32,11 +32,7 @@ h6,
 p {
   margin: 0;
 }
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
+
 img {
   display: block;
   max-width: 100%;
@@ -44,7 +40,6 @@ img {
 /* Base styles */
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -53,32 +48,43 @@ body {
   background-color: var(--main-bg-cl);
 }
 
-/* Background colors */
-.hero {
-  max-width: 1440px;
-  margin: auto;
-  margin-right: auto;
-  padding: 188px 0;
-  text-align: center;
-  background-color: var(--supporting-bg-cl);
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/hero/peopleoffice.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-.team {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  background-color: var(--secondary-bg-cl);
+/* Header */
+.header-page {
+  line-height: calc(16 / 14);
+  width: 100%;
+  border-bottom: 1px solid var(--secondary-fon-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.page-bottom {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: var(--supporting-bg-cl);
-  color: var(--secondary-bg-cl);
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin-right: 332px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.header-nav-logo {
+  display: block;
+  margin-right: 76px;
+}
+
+.header-nav-menu {
+  display: flex;
 }
 
 /* Logo */
@@ -122,13 +128,39 @@ body {
   color: var(--secondary-bg-cl);
 }
 
+.hero {
+  max-width: 1440px;
+  margin: auto;
+  margin-right: auto;
+  padding: 188px 0;
+  text-align: center;
+  background-color: var(--supporting-bg-cl);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/hero/peopleoffice.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.team {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: var(--secondary-bg-cl);
+}
+
+.page-bottom {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--supporting-bg-cl);
+  color: var(--secondary-bg-cl);
+}
+
 /* Menu */
 .unit-menu {
   font-weight: 500;
   line-height: 1.5;
   color: var(--subtitle-cl);
   text-decoration: none;
-  font-style: normal;
   padding-top: 24px;
   padding-bottom: 24px;
   position: relative;
@@ -153,13 +185,11 @@ body {
 }
 
 .unit-info {
-  font-style: normal;
   text-decoration: none;
   color: inherit;
 }
 
 .unit-info-item {
-  font-style: normal;
   text-decoration: none;
   color: inherit;
   transition: color var(--anim-fast);
@@ -331,11 +361,8 @@ body {
   width: 100%;
   padding: 40px 32px;
   color: var(--secondary-bg-cl);
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   background-color: var(--logo-part-cl);
   transform: translateY(100%);
@@ -345,48 +372,6 @@ body {
 .portfolio-link:focus .overlay-text,
 .portfolio-link:hover .overlay-text {
   transform: translateY(0%);
-}
-
-.link {
-  text-decoration: none;
-}
-
-.container {
-  max-width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.header-nav-logo {
-  display: block;
-  margin-right: 76px;
-}
-
-.header-page {
-  /* position: sticky; */
-  top: 0;
-  line-height: calc(16 / 14);
-  width: 100%;
-  background-color: var(--main-bg-cl);
-  border-bottom: 1px solid var(--secondary-fon-color);
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 1px 6px rgba(46, 47, 66, 0.08);
-  z-index: var(--header-idx);
-}
-
-.site-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-.header-nav {
-  display: flex;
-  align-items: center;
-  margin-right: 332px;
-}
-
-.header-nav-menu {
-  display: flex;
 }
 
 /* .header-nav-item {
@@ -456,7 +441,6 @@ body {
 .team-card {
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -570,10 +554,9 @@ body {
 .footer-social {
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   color: var(--main-bg-cl);
-  padding: 16px;
   margin-bottom: 16px;
 }
 
