@@ -135,6 +135,10 @@ body {
   transition: color var(--anim-fast);
 }
 
+.active {
+  color: var();
+}
+
 .active::after {
   content: '';
   display: inline-block;
@@ -145,6 +149,7 @@ body {
   border-radius: 2px;
   bottom: 0;
   background: var(--accent-txt-cl);
+  bottom: -1px;
 }
 
 .unit-info {
