@@ -315,8 +315,8 @@ body {
   color: var(--main-txt-cl);
 }
 
-.portfolio-item:hover .overlay,
-.portfolio-item:focus .overlay {
+.portfolio-item:hover .overlay-text,
+.portfolio-item:focus .overlay-text {
   transform: translateY(0%);
 }
 
@@ -330,11 +330,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateY(100%);
   width: 100%;
   height: 100%;
-  background-color: var(--logo-part-cl);
-  transition: transform var(--anim-fast);
 }
 
 .overlay-text {
@@ -349,6 +346,8 @@ body {
   line-height: 24px;
   letter-spacing: 0.02em;
   background-color: var(--logo-part-cl);
+  transform: translateY(100%);
+  transition: transform var(--anim-fast);
 }
 
 .link {
